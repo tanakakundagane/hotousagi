@@ -38,24 +38,24 @@ const Header = () => {
         </div>
       </div>
 
-      <div className='md:hidden p-5 fixed w-full z-10'>
-        <div className=' flex justify-between w-9/12 m-auto'>
+      <div className='md:hidden p-5 fixed w-full bg-white'>
+        <div className='flex justify-between w-9/12 m-auto'>
           <div>
             <p>ホトうさぎ岐阜</p>
           </div>
+        </div>
+      </div>
           <div 
-            className='cursor-pointer relative w-6 h-6'
+            className='md:hidden fixed cursor-pointer w-6 h-6 top-4 right-14 z-50'
             onClick={() => setIsOpen(!isOpen)}
             >
             <span className={`absolute w-8 h-0.5 bg-black transform transition duration-500 ${isOpen ? 'rotate-[-315deg] translate-y-2' : ''}`}></span>
             <span className={`absolute w-8 h-0.5 bg-black top-2.5 transform transition duration-500 ${isOpen ? 'hidden' : 'block'}`}></span>
             <span className={`absolute w-8 h-0.5 bg-black bottom-0 transform transition duration-500 ${isOpen ? 'rotate-[315deg] -translate-y-3.5' : ''}`}></span>
           </div>
-        </div>
-      </div>
 
-        <div className={`bg-slate-200 w-2/5 absolute transform duration-500 ${isOpen ? 'right-0' : '-right-full'}`}>
-          <div className='bg-slate-500 w-4/5 mr-auto ml-auto h-screen pt-20 [&_p]:mb-4 [&_p]:border-b-2 [&_p]:border-black'>
+        <div className={`md:hidden bg-white w-2/5 absolute transform duration-500 z-10 ${isOpen ? 'right-0' : '-right-full'}`}>
+          <div className='w-4/5 mr-auto ml-auto h-screen pt-20 [&_p]:mb-4 [&_p]:border-b-2 [&_p]:border-black'>
             <div>
               <p>会社案内</p>
             </div>
