@@ -4,7 +4,7 @@ import React from 'react'
 const SecondHeading = () => {
   return (
     <div className='mt-14 w-3/4 m-auto'>
-      <div className='text-center p-5 text-xl]'>
+      {/* <div className='text-center p-5 text-xl]'>
         <h1 className='text-2xl'>就労支援A型とは</h1>
       </div>
       <div>
@@ -21,7 +21,7 @@ const SecondHeading = () => {
             height={100}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
