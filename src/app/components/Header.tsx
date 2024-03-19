@@ -38,8 +38,8 @@ const Header = () => {
         </div>
       </div>
 
-      <div className='md:hidden fixed w-full bg-white'>
-          <div className='p-5'>
+      <div className='md:hidden fixed w-full bg-white z-40'>
+          <div className='p-4'>
             <p>ホトうさぎ岐阜</p>
           </div>
       </div>
