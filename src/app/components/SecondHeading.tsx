@@ -17,7 +17,7 @@ const SecondHeading = () => {
           <Image
             src="/images/読書うさぎさん.png"
             alt='画像'
-            width={200}
+            width={100}
             height={100}
           />
         </div>
