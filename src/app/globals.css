@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 body{
-  background-color: #f3f2ea
+  background-color: #f3f2ea;
+  font-family: 'Noto Serif JP', serif;
+  color: #b49531;
 }
 /* 
 :root {
