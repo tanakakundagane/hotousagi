@@ -4,8 +4,10 @@ import React from 'react'
 const ThirdHeading = () => {
   return (
     <div className='mt-14 w-5/6 m-auto'>
-      <div className='text-center p-5 text-xl'>
+      <div className='text-center p-5 text-xl relative'>
+      <div className='absolute top-10 bg-[#b49531]  w-1/4 h-0.5 md:left-20'></div>
         <h1 className='text-2xl'>作業内容<br/>work</h1>
+        <div className='absolute top-10 right-0 bg-[#b49531]  w-1/4 h-0.5 md:right-20'></div>
       </div>
       <div className='lg:flex lg:flex-row-reverse'>
         <div className='lg:pr-10 lg:pl-10'>
