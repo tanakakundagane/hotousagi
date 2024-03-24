@@ -3,6 +3,7 @@ import Header from './components/Header'
 import HeaderImage from './components/HeaderImage'
 import SecondHeading from './components/SecondHeading'
 import ThirdHeading from './components/ThirdHeading'
+import Contact from './components/Contact'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeaderImage />
       <SecondHeading />
       <ThirdHeading/>
+      <Contact />
     </div>
   )
 }
