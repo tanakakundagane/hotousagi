@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-const SecondHeading = () => {
+const SecondHeading = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
-    <div className='mt-20 w-5/6 m-auto '>
+    <div ref={ref} className='mt-20 w-5/6 m-auto '>
       <div className='text-center p-5 text-xl relative'>
         <div className='absolute top-10 bg-[#b49531]  w-1/4 h-0.5 md:left-20'></div>
         <h1 className='text-2xl'>就労継続支援<br/>A型とは</h1>
@@ -30,6 +30,6 @@ const SecondHeading = () => {
       </div>
     </div>
   )
-}
+});
 
 export default SecondHeading

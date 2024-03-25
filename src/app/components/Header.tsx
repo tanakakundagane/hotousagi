@@ -1,9 +1,16 @@
 "use client"
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
+
+interface HeaderProps {
+  onScrollToSecond: () => void;
+  onScrollToThird: () => void;
+}
 
 
-const Header = () => {
+// const Header = ({ onButtonClick }) => {
+
+  const Header: React.FC<HeaderProps> = ({onScrollToSecond, onScrollToThird}) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,14 +22,14 @@ const Header = () => {
           <p>ホトうさぎ岐阜</p>
         </Link>
         <div className='flex [&_p]:mr-5'>
-          <div>
+          <button onClick={onScrollToSecond}>
             <p>就労継続支援</p>
             <p>A型について</p>
-          </div>
-          <div>
+          </button>
+          <button onClick={onScrollToThird}>
             <p>作業内容</p>
             <p>work</p>
-          </div>
+          </button>
           <div>
             <p>会社案内</p>
             <p>company</p>

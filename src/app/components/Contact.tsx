@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='mt-10 pt-10 bg-custom-image bg-cover bg-center w-full'>
+    <div className='mt-10 pb-10 pt-10 bg-custom-image bg-cover bg-center w-full'>
       <div className='text-center'>
         <div>
           <h1 className='text-2xl'>お問い合わせ</h1>
