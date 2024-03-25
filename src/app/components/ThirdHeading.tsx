@@ -32,4 +32,6 @@ const ThirdHeading = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
   )
 });
 
+ThirdHeading.displayName = 'ThirdHeading';
+
 export default ThirdHeading

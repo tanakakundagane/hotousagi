@@ -32,4 +32,6 @@ const SecondHeading = React.forwardRef<HTMLDivElement, {}>((props, ref) => {
   )
 });
 
+SecondHeading.displayName = 'SecondHeading';
+
 export default SecondHeading
