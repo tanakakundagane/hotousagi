@@ -47,8 +47,10 @@ interface HeaderProps {
           </div>
 
           <div>
-            <p>ご利用案内</p>
-            <p>guidance</p>
+            <Link href="/userguide">
+              <p>ご利用案内</p>
+              <p>guidance</p>
+            </Link>
           </div>
 
           <button className='px-5 bg-[#f4ba6e] text-white text-center rounded'>
@@ -58,17 +60,21 @@ interface HeaderProps {
         </div>
       </div>
 
-      <div className='md:hidden fixed w-full bg-white z-40'>
-          <Link href="/">
+          <div className='md:hidden fixed w-full bg-white z-40'>
             <div className='p-4'>
-              <p>ホトうさぎ岐阜</p>
+              <div className='w-1/4'>
+                <Link href="/">
+                  <p>ホトうさぎ岐阜</p>
+                </Link>
+              </div>
             </div>
-          </Link>
-      </div>
+          </div>
+
           <div 
             className='md:hidden fixed cursor-pointer w-6 h-6 top-4 right-6 z-50'
             onClick={() => setIsOpen(!isOpen)}
             >
+
             <span className={`absolute w-8 h-0.5 bg-black transform transition duration-500 ${isOpen ? 'rotate-[-315deg] translate-y-2' : ''}`}></span>
             <span className={`absolute w-8 h-0.5 bg-black top-2.5 transform transition duration-500 ${isOpen ? 'hidden' : 'block'}`}></span>
             <span className={`absolute w-8 h-0.5 bg-black bottom-0 transform transition duration-500 ${isOpen ? 'rotate-[315deg] -translate-y-3.5' : ''}`}></span>
@@ -83,7 +89,9 @@ interface HeaderProps {
               </Link>
             </div>
             <div>
-              <p>ご利用案内</p>
+              <Link href="/userguide" className='cursor-pointer'>
+                <p>ご利用案内</p>
+              </Link>
             </div>
             <div>
               <p>お問い合わせ</p>
