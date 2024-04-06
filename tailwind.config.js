@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        customYellow: '#b49531',
+        customGreen: 'rgb(177, 217, 174)',
+      },
       backgroundImage: {
         'custom-image': "url('/images/hasikei.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
