@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { Button } from 'react-bootstrap'
 import Header from '../components/Header'
 
-const page = () => {
+const Page = () => {
 
   const someFunction = () => {
   }
@@ -87,4 +87,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
