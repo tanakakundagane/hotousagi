@@ -53,10 +53,12 @@ interface HeaderProps {
             </Link>
           </div>
 
-          <button className='px-5 bg-[#f4ba6e] text-white text-center rounded'>
-            <p>お問い合わせ</p>
-            <p>contact</p>
-          </button>
+          <Link href="contact">
+            <button className='px-5 bg-[#f4ba6e] text-white text-center rounded'>
+              <p>お問い合わせ</p>
+              <p>contact</p>
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -94,7 +96,9 @@ interface HeaderProps {
               </Link>
             </div>
             <div>
+              <Link href="contact">
               <p>お問い合わせ</p>
+              </Link>
             </div>
           </div>
         </div>
