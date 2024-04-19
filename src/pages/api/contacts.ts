@@ -12,6 +12,7 @@ export default function sendGmail(req: NextApiRequest, res:NextApiResponse){
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
+    secure: false,
     auth: {
       user: process.env.GMAILUSER,
       pass: process.env.GMAILPASSWORD
@@ -43,12 +44,19 @@ export default function sendGmail(req: NextApiRequest, res:NextApiResponse){
   // });
 
   transporter.sendMail(toHostMailData, function(err, info) {
+
     if (err) {
-      console.error("Error occurred. " + err.message);
-      return res.status(500).send({ success: false, error: err.message });
-    }
-    console.log('Message sent: %s', info.messageId);
-    return res.send({ success: true, messageId: info.messageId });
+      console.error('Sending mail failed:', err);
+      return;
+  }
+  console.log('Mail sent:', info.response);
+
+    // if (err) {
+    //   console.error("Error occurred. " + err.message);
+    //   return res.status(500).send({ success: false, error: err.message });
+    // }
+    // console.log('Message sent: %s', info.messageId);
+    // return res.send({ success: true, messageId: info.messageId });
   });
 
   return res.send("成功しました") ;
