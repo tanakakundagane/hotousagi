@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer"
 
 export default function sendGmail(req: NextApiRequest, res:NextApiResponse){
-  
+
   if (!req.body.name || !req.body.email || !req.body.message || !req.body.tel) {
     return res.status(400).send('必要なデータが不足しています。');
   }
@@ -37,9 +37,18 @@ export default function sendGmail(req: NextApiRequest, res:NextApiResponse){
     `
   };
 
+  // transporter.sendMail(toHostMailData, function(err, info) {
+  //   if(err) console.log(err);
+  //   else console.log(info);
+  // });
+
   transporter.sendMail(toHostMailData, function(err, info) {
-    if(err) console.log(err);
-    else console.log(info);
+    if (err) {
+      console.error("Error occurred. " + err.message);
+      return res.status(500).send({ success: false, error: err.message });
+    }
+    console.log('Message sent: %s', info.messageId);
+    return res.send({ success: true, messageId: info.messageId });
   });
 
   return res.send("成功しました") ;
