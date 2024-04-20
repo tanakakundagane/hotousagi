@@ -23,7 +23,7 @@ export default function sendGmail(req: NextApiRequest, res:NextApiResponse){
 
   const toHostMailData = {
     from: req.body.email,
-    to: "s20970059@nucba.ac.jp",
+    to: "tanakakundagane@gmail.com",
     subject: `[お問い合わせ] ${req.body.name}様より`,
     text: `${req.body.message} Send from ${req.body.email}`,
     html: `
@@ -38,26 +38,14 @@ export default function sendGmail(req: NextApiRequest, res:NextApiResponse){
     `
   };
 
-  // transporter.sendMail(toHostMailData, function(err, info) {
-  //   if(err) console.log(err);
-  //   else console.log(info);
-  // });
-
   transporter.sendMail(toHostMailData, function(err, info) {
-
     if (err) {
-      console.error('Sending mail failed:', err);
-      return;
-  }
-  console.log('Mail sent:', info.response);
-
-    // if (err) {
-    //   console.error("Error occurred. " + err.message);
-    //   return res.status(500).send({ success: false, error: err.message });
-    // }
-    // console.log('Message sent: %s', info.messageId);
-    // return res.send({ success: true, messageId: info.messageId });
-  });
+        console.error('Sending mail failed:', err);
+        return res.status(500).send('メール送信に失敗しました。');
+    }
+    console.log('Mail sent:', info.response);
+    res.send("成功しました");
+});
 
   return res.send("成功しました") ;
 }
