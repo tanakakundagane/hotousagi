@@ -107,7 +107,7 @@ const Page = () => {
       )}
 
       {page === 'confirm' && (
-        <div className='w-2/3 mx-auto'>
+        <div className='w-2/3 mx-auto mb-10'>
           <div className='w-2/3 mx-auto'>
             <h2 className='text-center my-10 py-2 text-xl bg-white'>確認ページ</h2>
             
