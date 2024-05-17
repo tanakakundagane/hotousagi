@@ -74,7 +74,7 @@ const Page = () => {
 
 
       {page === 'form' && (
-        <form onSubmit={handleConfirm} className='m-auto w-5/6 text-left'>
+        <form onSubmit={handleConfirm} className='m-auto w-5/6 text-left mb-20'>
           <div className='w-4/6 m-auto mt-10'>
             <label>お名前</label>
             <br/>
