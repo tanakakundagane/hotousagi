@@ -68,7 +68,7 @@ const Page = () => {
     <div className='mb-10'>
     <Header onScrollToSecond={someFunction} onScrollToThird={anotherFunction} showWorkInfo={false}/>
 
-    <div className='pt-14 text-center  bg-[#f4ba6e] md:pt-0 md:mt-2'>
+    <div className='pt-16 text-center  bg-[#f4ba6e] md:pt-0 md:mt-2'>
       <h1 className='text-white p-5 lg:text-2xl md:text-xl'>お問い合わせ</h1>
     </div>
 
@@ -78,29 +78,29 @@ const Page = () => {
           <div className='w-4/6 m-auto mt-10'>
             <label>お名前</label>
             <br/>
-            <input type="text" name="name" value={formData.name} onChange={handleChange} className='w-full'/>
+            <input type="text" name="name" value={formData.name} onChange={handleChange} className='w-full text-black'/>
           </div>
 
           <div className='w-4/6 m-auto mt-10'>
             <label>メールアドレス</label>
             <br/>
-            <input type="email" name="email" value={formData.email} onChange={handleChange} className='w-full'/>
+            <input type="email" name="email" value={formData.email} onChange={handleChange} className='w-full text-black'/>
           </div>
 
           <div className='w-4/6 m-auto mt-10'>
             <label>電話番号</label>
             <br/>
-            <input type="tel" name="phone" value={formData.phone} onChange={handleChange} className='w-full'/>
+            <input type="tel" name="phone" value={formData.phone} onChange={handleChange} className='w-full text-black'/>
           </div>
 
           <div className='w-4/6 m-auto mt-10'>
             <label>お問い合わせ内容</label>
             <br/>
-            <textarea name="message" value={formData.message} onChange={handleChange} className='w-full h-20'/>
+            <textarea name="message" value={formData.message} onChange={handleChange} className='w-full h-20 text-black'/>
           </div>
 
           <div className='mt-10 text-center pb-0'>
-              <button type="submit" className='p-2 rounded bg-customGreen text-white'>確認</button>
+              <button type="submit" className='p-2 rounded bg-customGreen text-white active:bg-darkGreen'>確認</button>
           </div>
 
         </form>
@@ -112,20 +112,20 @@ const Page = () => {
             <h2 className='text-center my-10 py-2 text-xl bg-white'>確認ページ</h2>
             
             <p>★お名前</p>
-            <p className='ml-20 mt-1'>{formData.name}</p>
+            <p className='md:ml-20 ml-10 mt-1 text-black'>{formData.name}</p>
 
             <p className='mt-5'>★メールアドレス</p>
-            <p className='ml-20 mt-1'>{formData.email}</p>
+            <p className='md:ml-20 mt-1 text-black'>{formData.email}</p>
 
             <p className='mt-5'>★電話番号</p>
-            <p className='ml-20 mt-1'>{formData.phone}</p>
+            <p className='md:ml-20 ml-10 mt-1 text-black'>{formData.phone}</p>
 
             <p className='mt-5'>お問い合わせ内容</p>
-            <p className='ml-20 mt-1'>{formData.message}</p>
+            <p className='md:ml-20 ml-10 mt-1 text-black'>{formData.message}</p>
 
             <div className='mt-10 text-center'>
-              <button onClick={handleSubmit} className='p-3 mx-3 bg-customGreen rounded text-white'>送信</button>
-              <button onClick={handleEdit} className='p-3 mx-3  bg-customGreen rounded text-white'>訂正</button>
+              <button onClick={handleSubmit} className='p-3 mx-3 bg-customGreen rounded text-white active:bg-darkGreen'>送信</button>
+              <button onClick={handleEdit} className='p-3 mx-3  bg-customGreen rounded text-white active:bg-darkGreen'>訂正</button>
             </div>
           </div>
         </div>

@@ -10,12 +10,17 @@ module.exports = {
       colors: {
         customYellow: '#b49531',
         customGreen: 'rgb(177, 217, 174)',
+        darkGreen: '#218838'
       },
       backgroundImage: {
         'custom-image': "url('/images/hasikei.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      },
+      fontSize: {
+        'xxs': '0.625rem', // 10px
+        'xxxs': '0.5rem', // 8px
       },
     },
   },
