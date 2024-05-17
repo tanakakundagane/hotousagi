@@ -19,7 +19,7 @@ const Page = () => {
     <div>
       <Header onScrollToSecond={someFunction} onScrollToThird={anotherFunction} showWorkInfo={false}/>
 
-      <div className='text-center pt-14'>
+      <div className='text-center pt-20'>
         <h1 className='lg:text-2xl md:text-xl'>
           会社案内
         </h1>
