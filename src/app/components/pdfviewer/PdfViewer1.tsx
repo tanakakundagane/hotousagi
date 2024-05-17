@@ -17,7 +17,7 @@ const PdfViewer1 = () => {
 
   return (
     <div>
-      <button onClick={handleButtonClick}>
+      <button onClick={handleButtonClick} className='text-sm'>
       就労継続支援Ａ型事業所における地域連携活動実施状況報告書
       </button>
 
