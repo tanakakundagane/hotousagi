@@ -1,5 +1,6 @@
+"use client"
 import React from 'react'
-import ImageViewer from './ImageViewer'
+import PdfViewer1 from './pdfviewer/PdfViewer1'
 
 const Footer = () => {
   return (
@@ -9,8 +10,8 @@ const Footer = () => {
           <h1>ホトうさぎ岐阜</h1>
           <p>〒500-8281 岐阜市東鶉3丁目76番地2</p>
         </div>
+        <PdfViewer1/>
       </div>
-      <ImageViewer/>
     </div>
   )
 }
