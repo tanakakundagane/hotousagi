@@ -17,7 +17,7 @@ const PdfViewer3 = () => {
 };
   return (
     <div>
-      <button onClick={handleButtonClick} className='text-sm'>
+      <button onClick={handleButtonClick} className='md:text-sm text-xs'>
       就労継続支援Ａ型事業所におけるスコア表（実績Ⅰ～Ⅳ、Ⅵ）
       </button>
 
