@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Contact = () => {
@@ -16,9 +17,13 @@ const Contact = () => {
           <p>FAX</p>
           <p>058-277-4136</p>
         </div>
-        <div className='m-auto mt-5 rounded text-white text-center text-xl py-3 w-1/2 bg-[#f4ba6e] cursor-pointer'>
-          <h1>お問い合わせ</h1>
-        </div>
+
+        <Link href="contact">
+          <div className='m-auto mt-5 rounded text-white text-center text-xl py-3 w-1/2 bg-[#f4ba6e] cursor-pointer'>
+            <h1>お問い合わせ</h1>
+          </div>
+        </Link>
+
       </div>
     </div>
   )
