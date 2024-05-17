@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React, { useRef, useState } from 'react'
+import Image from 'next/image'
 
 interface HeaderProps {
   onScrollToSecond: () => void;
@@ -63,10 +64,19 @@ interface HeaderProps {
       </div>
 
           <div className='md:hidden fixed w-full bg-white z-40'>
-            <div className='p-4'>
-              <div className='w-1/4'>
+            <div className='p-3'>
+              <div className='w-2/4'>
                 <Link href="/">
-                  <p>ホトうさぎ岐阜</p>
+                  <div className='flex'>
+                    <Image 
+                    src='/images/ホトうさぎ_(小).png' 
+                    alt='画像'
+                    width={25}  // これらはアスペクト比を維持するための基準値
+                    height={100} // 実際の表示サイズは親要素によって決まる
+                    className='ml-2'
+                    />
+                    <p className='ml-3 mt-3'>ホトうさぎ岐阜</p>
+                  </div>
                 </Link>
               </div>
             </div>
