@@ -65,7 +65,7 @@ const Page = () => {
   };
 
   return (
-    <>
+    <div className='mb-10'>
     <Header onScrollToSecond={someFunction} onScrollToThird={anotherFunction} showWorkInfo={false}/>
 
     <div className='pt-14 text-center  bg-[#f4ba6e] md:pt-0 md:mt-2'>
@@ -74,7 +74,7 @@ const Page = () => {
 
 
       {page === 'form' && (
-        <form onSubmit={handleConfirm} className='m-auto w-5/6 text-left mb-20'>
+        <form onSubmit={handleConfirm} className='m-auto w-5/6 text-left'>
           <div className='w-4/6 m-auto mt-10'>
             <label>お名前</label>
             <br/>
@@ -99,7 +99,7 @@ const Page = () => {
             <textarea name="message" value={formData.message} onChange={handleChange} className='w-full h-20'/>
           </div>
 
-          <div className='mt-10 text-center'>
+          <div className='mt-10 text-center pb-0'>
               <button type="submit" className='p-2 rounded bg-customGreen text-white'>確認</button>
           </div>
 
@@ -141,7 +141,7 @@ const Page = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
 
