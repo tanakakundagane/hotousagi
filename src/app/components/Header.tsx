@@ -101,7 +101,7 @@ interface HeaderProps {
           </div>
 
           <div 
-            className='md:hidden fixed cursor-pointer w-6 h-6 top-4 right-6 z-50'
+            className='lg:hidden fixed cursor-pointer w-6 h-6 top-4 right-6 z-50'
             // onClick={() => setIsOpen(!isOpen)}
             onClick={handleMenuToggle}
             >
@@ -116,7 +116,7 @@ interface HeaderProps {
       )}
 
         {/* <div className={`md:hidden bg-white w-2/5 absolute transform duration-500 z-10 ${isOpen ? 'right-0' : '-right-full'}`}> */}
-        <div className={`md:hidden bg-white w-2/5 fixed duration-500 z-40 transform ${isOpen ? 'right-0 opacity-100 visible' : 'right-0 opacity-0 invisible'}`}>
+        <div className={`lg:hidden bg-white w-2/5 fixed duration-500 z-40 transform ${isOpen ? 'right-0 opacity-100 visible' : 'right-0 opacity-0 invisible'}`}>
           <div className='w-4/5 mr-auto ml-auto h-screen pt-20 [&_p]:mb-4 [&_p]:border-b-2 [&_p]:border-black'>
             <div>
               <Link href="information" className='cursor-pointer'>

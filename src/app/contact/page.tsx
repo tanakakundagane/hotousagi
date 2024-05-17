@@ -68,7 +68,7 @@ const Page = () => {
     <div className='mb-10'>
     <Header onScrollToSecond={someFunction} onScrollToThird={anotherFunction} showWorkInfo={false}/>
 
-    <div className='pt-16 text-center  bg-[#f4ba6e] md:pt-0 md:mt-2'>
+    <div className='pt-16 text-center  bg-[#f4ba6e] lg:pt-0 lg:mt-2'>
       <h1 className='text-white p-5 lg:text-2xl md:text-xl'>お問い合わせ</h1>
     </div>
 
