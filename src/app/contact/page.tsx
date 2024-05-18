@@ -111,8 +111,16 @@ const Page = () => {
             <textarea name="message" value={formData.message} onChange={handleChange} className='w-full h-20 text-black'/>
           </div>
 
+          <div className='text-center mt-10'>
+            <p>
+              <Link href="personal">
+                <button className='text-blue-400'>個人の情報取り扱い</button>
+              </Link>
+              をご確認のうえ、同意された方は確認画面へお進みください。</p>
+          </div>
+
           <div className='mt-10 text-center pb-0'>
-              <button type="submit" className='p-2 rounded bg-customGreen text-white active:bg-darkGreen'>確認</button>
+              <button type="submit" className='p-2 rounded bg-customGreen text-white active:bg-darkGreen'>確認画面へ</button>
           </div>
 
         </form>

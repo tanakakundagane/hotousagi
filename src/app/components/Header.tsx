@@ -93,7 +93,9 @@ interface HeaderProps {
                     height={100} // 実際の表示サイズは親要素によって決まる
                     className='ml-2'
                     />
-                    <p className='ml-3 mt-3'>ホトうさぎ岐阜</p>
+                    <div className='text-center'>
+                      <p className='ml-3 mt-3'>ホトうさぎ岐阜</p>
+                    </div>
                   </div>
                 </Link>
               </div>
@@ -116,7 +118,7 @@ interface HeaderProps {
       )}
 
         {/* <div className={`md:hidden bg-white w-2/5 absolute transform duration-500 z-10 ${isOpen ? 'right-0' : '-right-full'}`}> */}
-        <div className={`lg:hidden bg-white w-2/5 fixed duration-500 z-40 transform ${isOpen ? 'right-0 opacity-100 visible' : 'right-0 opacity-0 invisible'}`}>
+        <div className={`md:hidden bg-white w-2/5 fixed duration-500 z-40 transform ${isOpen ? 'right-0 opacity-100 visible' : 'right-0 opacity-0 invisible'}`}>
           <div className='w-4/5 mr-auto ml-auto h-screen pt-20 [&_p]:mb-4 [&_p]:border-b-2 [&_p]:border-black'>
             <div>
               <Link href="information" className='cursor-pointer'>
