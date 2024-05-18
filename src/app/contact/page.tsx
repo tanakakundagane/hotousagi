@@ -76,25 +76,37 @@ const Page = () => {
       {page === 'form' && (
         <form onSubmit={handleConfirm} className='m-auto w-5/6 text-left'>
           <div className='w-4/6 m-auto mt-10'>
-            <label>お名前</label>
+            <div className='flex'>
+              <label>★お名前</label>
+              <p className='text-red-400 ml-3'>＜必須＞</p>
+            </div>
             <br/>
             <input type="text" name="name" value={formData.name} onChange={handleChange} className='w-full text-black'/>
           </div>
 
           <div className='w-4/6 m-auto mt-10'>
-            <label>メールアドレス</label>
+            <div className='flex'>
+              <label>★メールアドレス</label>
+              <p className='text-red-400 ml-3'>＜必須＞</p>
+            </div>
             <br/>
             <input type="email" name="email" value={formData.email} onChange={handleChange} className='w-full text-black'/>
           </div>
 
           <div className='w-4/6 m-auto mt-10'>
-            <label>電話番号</label>
+            <div className='flex'>
+              <label>★電話番号</label>
+              <p className='text-red-400 ml-3'>＜必須＞</p>
+            </div>
             <br/>
             <input type="tel" name="phone" value={formData.phone} onChange={handleChange} className='w-full text-black'/>
           </div>
 
           <div className='w-4/6 m-auto mt-10'>
-            <label>お問い合わせ内容</label>
+            <div className='flex'>
+              <label>★お問い合わせ</label>
+              <p className='text-red-400 ml-3'>＜必須＞</p>
+            </div>
             <br/>
             <textarea name="message" value={formData.message} onChange={handleChange} className='w-full h-20 text-black'/>
           </div>
@@ -120,7 +132,7 @@ const Page = () => {
             <p className='mt-5'>★電話番号</p>
             <p className='md:ml-20 ml-10 mt-1 text-black'>{formData.phone}</p>
 
-            <p className='mt-5'>お問い合わせ内容</p>
+            <p className='mt-5'>★お問い合わせ内容</p>
             <p className='md:ml-20 ml-10 mt-1 text-black'>{formData.message}</p>
 
             <div className='mt-10 text-center'>
