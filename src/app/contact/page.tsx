@@ -132,16 +132,16 @@ const Page = () => {
             <h2 className='text-center my-10 py-2 text-xl bg-white'>確認ページ</h2>
             
             <p>★お名前</p>
-            <p className='md:ml-20 ml-10 mt-1 text-black'>{formData.name}</p>
+            <p className='md:text-center ml-0 mt-1 text-black'>{formData.name}</p>
 
             <p className='mt-5'>★メールアドレス</p>
-            <p className='md:ml-20 mt-1 text-black'>{formData.email}</p>
+            <p className='md:text-center mt-1 text-black'>{formData.email}</p>
 
             <p className='mt-5'>★電話番号</p>
-            <p className='md:ml-20 ml-10 mt-1 text-black'>{formData.phone}</p>
+            <p className='md:text-center ml-0 mt-1 text-black'>{formData.phone}</p>
 
             <p className='mt-5'>★お問い合わせ内容</p>
-            <p className='md:ml-20 ml-10 mt-1 text-black'>{formData.message}</p>
+            <p className='md:text-center ml-0 mt-1 text-black'>{formData.message}</p>
 
             <div className='mt-10 text-center'>
               <button onClick={handleSubmit} className='p-3 mx-3 bg-customGreen rounded text-white active:bg-darkGreen'>送信</button>
