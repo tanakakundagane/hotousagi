@@ -17,7 +17,7 @@ export async function POST(req: Request) {
 
 
     const data = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'hotousagi.nicework.co.jp',
       to: ['niceworkjukai@gmail.com'],
       subject: `${name}様からのお問い合わせ`,
       text: `Welcome ${name},Message: ${message}`,
