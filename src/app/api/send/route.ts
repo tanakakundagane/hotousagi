@@ -18,7 +18,8 @@ export async function POST(req: Request) {
 
     const data = await resend.emails.send({
       from: 'hotousagi@nicework.co.jp',
-      to: ['niceworkjukai@gmail.com'],
+      // to: ['niceworkjukai@gmail.com'],
+      to: process.env.YOUR_EMAIL as string,
       subject: `${name}様からのお問い合わせ`,
       text: `Welcome ${name},Message: ${message}`,
       react: EmailTemplate({ firstName: `${name}` , firstMessage: `${message}`, firstEmail: `${email}`, firstPhone: `${phone}`}),
