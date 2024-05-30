@@ -21,7 +21,7 @@ export async function POST(req: Request) {
     // 管理者に送るメール内容
     const adminEmail = {
       from: 'hotousagi@nicework.co.jp',
-      to: ['niceworkjukai@gmail.com'],
+      to: ['hotousagi@nicework.co.jp'],
       subject: `${name}様からのお問い合わせ`,
       text: `Welcome ${name}, Message: ${message}`,
       react: EmailTemplate({ firstName: `${name}`, firstMessage: `${message}`, firstEmail: `${email}`, firstPhone: `${phone}` }),
