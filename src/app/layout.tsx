@@ -5,10 +5,14 @@ import Header from './components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
-  title: 'ホトうさぎ岐阜',
-  description: 'ホトうさぎ岐阜は、障がい者の社会参加と自立を支援する就労継続支援A型事業所です。安全で適正な環境のもと、社会参加の機会を提供し、継続的な就労訓練を通じて社会的障壁の除去を目指しています。',
-}
+export const  metadata: Metadata = {
+	title: "ホトうさぎ岐阜",
+	description: "ホトうさぎ岐阜は、障がい者の社会参加と自立を支援する就労継続支援A型事業所です。安全で適正な環境のもと、社会参加の機会を提供し、継続的な就労訓練を通じて社会的障壁の除去を目指しています。",
+	verification: {
+		google: "dtTPoNAo_BjJd0U4foJJTceYIi4_9_g2Expm0Q6kOHQ",
+		},
+};
+
 
 export default function RootLayout({
   children,
