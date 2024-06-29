@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hotousagi.nicework.co.jp/
+
+# Sitemaps
+Sitemap: https://hotousagi.nicework.co.jp/sitemap.xml
