@@ -2,7 +2,7 @@ import '../styles/globals.css';
 import Head from 'next/head';
 import { AppProps } from 'next/app';
 
-function _document({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -13,4 +13,4 @@ function _document({ Component, pageProps }: AppProps) {
   );
 }
 
-export default _document;
+export default MyApp;
