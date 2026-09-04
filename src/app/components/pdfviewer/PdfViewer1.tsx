@@ -12,7 +12,7 @@ const PdfViewer1 = () => {
 
   const handleButtonClick = () => {
     setShowPdf(true);
-    window.open("/images/image4.pdf" , "_blank");
+    window.open("/images/123.pdf" , "_blank");
 };
 
   return (
